@@ -32,7 +32,9 @@ export default class App extends React.Component {
               <IndexRoute component={Home} />
               <Route path="login" component={Login} />
               <Route path="signup" component={Signup} />
-              <Route path="dashboard" component={Dashboard} />
+              <Route component={Restricted}>
+                <Route path="dashboard" component={Dashboard} />
+              </Route>
             </Route>
           </Router>
         </Provider>
