@@ -6,7 +6,7 @@ export default class LoginForm extends Component {
   static contextTypes = {
     router: PropTypes.object,
     store: PropTypes.object
-  };
+  }
 
   componentWillReceiveProps (nextProps) {
     if (nextProps.user.status === 'authenticated' &&
@@ -27,7 +27,6 @@ export default class LoginForm extends Component {
       submitting,
       error
     } = this.props
-    console.log(error);
     return (
 
       <div className='col-xs-offset-2 col-xs-8 col-md-offset-3 col-md-6 form-container'>
