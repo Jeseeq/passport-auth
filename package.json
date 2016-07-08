@@ -12,14 +12,16 @@
   "license": "MIT",
   "scripts": {
     "test": "",
-    "start": "node server/main.js",
+    "start": "nodemon server/main.js",
     "build": "rimraf dist && cross-env NODE_ENV=production webpack --config ./webpack.production.config.js --progress --profile --colors",
     "eslint": "eslint ."
   },
   "dependencies": {
     "babel-cli": "^6.4.0",
     "react": "^0.14.3",
-    "react-dom": "^0.14.3"
+    "react-dom": "^0.14.3",
+    "socket.io": "^1.4.8",
+    "validator": "^5.4.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.0.3",

@@ -1,8 +1,9 @@
 web:
   build: .
   environment:
-    - NODE_ENV=production
+    # - NODE_ENV=production in v2 of docker-compose you can use .env files
     - PORT=3000
+    - jwtSecret='a secret phrase'
   links:
     - db
   ports:

@@ -1,0 +1,28 @@
+.container {
+  margin-top: 40px;
+}
+.form-container .fa-user {
+    font-size: 48px;
+    margin: 20px auto 20px auto;
+    display: block;
+    text-align: center;
+  }
+.form-container  form {
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 30px;
+  }
+.form-container  header {
+    display: block;
+    font-size: 20px;
+    background: #ececec;
+    padding: 8px 30px;
+    text-align: left;
+  }
+.form-container  .form-group{
+    margin-bottom: 20px;
+  }
+.form-container  .submit {
+    margin-right: 5px;
+
+  }
