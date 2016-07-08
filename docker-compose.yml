@@ -1,0 +1,18 @@
+web:
+  build: .
+  environment:
+    - NODE_ENV=production
+    - PORT=3000
+  links:
+    - db
+  ports:
+    - '3000:3000'
+  volumes:
+    - .:/var/www/app/src
+    - /var/www/app/src/node_modules
+db:
+  image: mongo:3.2
+  ports:
+   - "27018:27017"
+  volumes:
+   - data:/data/db
