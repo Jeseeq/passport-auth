@@ -15,7 +15,7 @@ const config = require('./config/config');
 const users = require('./routes/auth');
 
 const isDeveloping = process.env.NODE_ENV !== 'production';
-const port = isDeveloping ? 3000 : process.env.PORT;
+const port = process.env.PORT || 3000;
 const app = express();
 
 /*Apply middleware*/
