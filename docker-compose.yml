@@ -13,6 +13,7 @@ web:
     - /var/www/app/src/node_modules
 db:
   image: mongo:3.2
+  container_name: db
   ports:
    - "27018:27017"
   volumes:
