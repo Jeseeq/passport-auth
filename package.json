@@ -38,10 +38,8 @@
     "redux-promise": "^0.5.3",
     "redux-thunk": "^2.1.0",
     "socket.io": "^1.4.8",
-    "validator": "^5.4.0"
-  },
-  "devDependencies": {
-    "autoprefixer": "^6.0.3",
+    "validator": "^5.4.0",
+	"autoprefixer": "^6.0.3",
     "babel-eslint": "^4.1.6",
     "babel-loader": "^6.2.3",
     "babel-jscs": "^2.0.5",
